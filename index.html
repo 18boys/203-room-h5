@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>有道精品课</title>
+  <link rel="stylesheet" href="/prd/styles/index@e73d904b58377fe0b400611b06324f7d.css" />
+
+  <script>
+    var _hmt = _hmt || [];
+    (function () {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?f4d768dff4a6a32acb59265cd2f89966";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+</head>
+
+<div class='pageWrapper'>
+  <div class='page home'>
+    <img src="/img/home-button.png" class="loading">
+  </div>
+  <div class='page full-page hidden' id="full-page">
+    <video
+        preload="auto"
+        class="full-video"
+        id="full-vidio"
+        src="/video/school-first.mp4"
+        playsinline
+        webkit-playsinline
+        x5-playsinline
+        class="video"
+    />
+  </div>
+  <div class='page comment-page hidden'>
+    <a href="//ke.youdao.com" class="button class-button"></a>
+    <div class="button share-button"></div>
+  </div>
+  <div class='page share-page hidden'>
+    <img src="./img/share-point.png" class="share-img">
+  </div>
+
+</div>
+
+<!--lib-->
+<script src="//shared.ydstatic.com/js/zepto/1.1.6.js"></script>
+
+<!--业务 js-->
+<script type="text/javascript" src="prd/scripts/index@06b66a99a95b8deb37248772545b0a26.js"></script>
+
+<!--分享-->
+<script src="//shared.ydstatic.com/js/ydk/ydk-1.4.4-min.js"></script>
+<script>
+  ydk.config({
+    debug: false,
+    jsApiList: ['checkJsApi', 'share']
+  });
+  ydk.share({
+    type: 'wechat',
+    title: '203寝室小婊砸吐槽大会',
+    desc: '什么网课这么厉害,强势围观',
+    imgUrl: 'http://' + location.host + '/dict/market/20180211letter/img/home.png',
+    link: location.href,
+    shift: true,
+    success: function () {
+      $('.share-page').addClass('hidden').removeClass('visibility')
+    }
+  })
+</script>
+
+</body>
+</html>

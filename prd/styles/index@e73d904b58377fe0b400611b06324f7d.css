@@ -1,0 +1,34 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+html,body{height:100%;font-size:12px;line-height:1;font-family:arial,"Hiragino Sans GB";background:#f5f7f9;overflow:hidden}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+a{text-decoration:none}
+input[type="text"]::-ms-clear{display:none}
+@font-face{font-family:'H35';src:url("//shared.youdao.com/dict/market/20180211letter/font/fang.ttf")}
+@font-face{font-family:'H55';src:url("//shared.youdao.com/dict/market/20180211letter/font/fang.ttf")}
+html{font-size:100px}
+body{padding-top:constant(safe-area-inset-top);padding-left:constant(safe-area-inset-left);padding-right:constant(safe-area-inset-right);padding-bottom:constant(safe-area-inset-bottom)}
+.pageWrapper{width:3.75rem;height:6.04rem;transform-origin:top left}
+.pageWrapper .page{position:absolute;top:0;left:0;bottom:0;right:0}
+.hide{display:none}
+.show{display:block}
+.hidden{visibility:hidden}
+.visibility{visibility:visible}
+.home{background:url("/img/home.png") no-repeat;background-size:cover}
+.home .loading{position:absolute;bottom:.75rem;left:.37rem;right:.37rem;height:.7rem;-webkit-animation:tada 1s linear infinite;animation-fill-mode:forwards;-webkit-animation-fill-mode:forwards;animation-delay:.5s;-webkit-animation-delay:.5s}
+@-webkit-keyframes tada{0%{-webkit-transform:scale(0.9)}
+10%,20%{-webkit-transform:scale(1)}
+30%,50%,70%,90%{-webkit-transform:scale(1.1)}
+40%,60%,80%{-webkit-transform:scale(1.05)}
+100%{-webkit-transform:scale(0.95)}
+}
+.full-page .full-video{width:100%;height:100%;object-fit:fill}
+.comment-page{background:url("/img/comment.png") no-repeat;background-size:cover}
+.comment-page .button{position:absolute;bottom:.7rem;width:1.3rem;height:.8rem}
+.comment-page .class-button{left:.33rem}
+.comment-page .share-button{right:.33rem}
+.share-page{background-color:rgba(0,0,0,0.8)}
+.share-page .share-img{position:absolute;left:0;right:0;top:0;bottom:0;width:100%;height:100%}
